@@ -38,6 +38,10 @@ report 54300 "BHB Update Job Customer"
                     Job."Sell-to Country/Region Code" := SellToCustomer."Country/Region Code";
                     Job.Reserve := SellToCustomer.Reserve;
                     UpdateSellToContact(Job);
+                    if SellToCustomer."Bill-to Customer No." <> '' then
+                        Job.Validate("Bill-to Customer No.", SellToCustomer."Bill-to Customer No.")
+                    else
+                        Job.Validate("Bill-to Customer No.", Job."Sell-to Customer No.");
                     Job.Modify();
                 end;
             end;
