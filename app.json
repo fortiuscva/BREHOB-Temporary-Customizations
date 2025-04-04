@@ -1,7 +1,7 @@
 {
   "id": "7940653f-bdd4-4ba2-8cc8-2173d7858c3d",
   "name": "Brehob Temporary Customizations",
-  "publisher": "Default Publisher",
+  "publisher": "Adcirrus",
   "version": "1.0.0.0",
   "brief": "",
   "description": "",
@@ -13,7 +13,7 @@
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "26.0.0.0",
+  "application": "25.0.0.0",
   "idRanges": [
     {
       "from": 54300,
